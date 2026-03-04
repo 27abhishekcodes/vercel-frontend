@@ -1,0 +1,90 @@
+/* Full page center */
+.auth-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Heading */
+.auth-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1f2937;
+}
+
+/* Form spacing */
+.auth-container form div {
+  margin-bottom: 15px;
+}
+
+/* Input fields */
+.auth-container input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.auth-container input:focus {
+  border-color: #2563eb;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+/* Submit button */
+.auth-container button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.auth-container button[type="submit"]:hover {
+  background: #1d4ed8;
+}
+
+/* Toggle text */
+.auth-container p {
+  text-align: center;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+/* Toggle button */
+.auth-container p button {
+  background: none;
+  border: none;
+  color: #2563eb;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.auth-container p button:hover {
+  text-decoration: underline;
+}
+
+/* Error message */
+.auth-container p[style] {
+  margin: 5px 0;
+  font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .auth-container {
+    margin: 40px 20px;
+    padding: 20px;
+  }
+}
