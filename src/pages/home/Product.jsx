@@ -7,7 +7,7 @@ export function Product({ product, loadCart }) {
 
   const addToCart = async () => {
     const token = localStorage.getItem("token");
-    await axios.post('http://localhost:3000/api/cart/add', {
+    await axios.post('https://vercel-backend-new.onrender.com/api/cart/add', {
       productId: product._id,
       quantity
     },{
