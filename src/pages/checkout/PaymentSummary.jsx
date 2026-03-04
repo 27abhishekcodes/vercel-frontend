@@ -37,7 +37,7 @@ export function PaymentSummary({ cart, paymentSummary, loadCart }) {
       const token = localStorage.getItem('token');
       console.log(token)
 
-      await axios.post('http://localhost:3000/api/orders/makeorder', orderData, {
+      await axios.post('https://vercel-backend-new.onrender.com/api/orders/makeorder', orderData, {
             headers: {
                 'Content-Type': 'application/json',
                 Authorization: `Bearer ${token}`,
@@ -45,7 +45,7 @@ export function PaymentSummary({ cart, paymentSummary, loadCart }) {
             });
 
       
-      await axios.delete('http://localhost:3000/api/cart/clear',{
+      await axios.delete('https://vercel-backend-new.onrender.com/api/cart/clear',{
             headers: {
                 'Content-Type': 'application/json',
                 Authorization: `Bearer ${token}`,
