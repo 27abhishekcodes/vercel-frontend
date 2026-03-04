@@ -35,7 +35,7 @@ export function AuthForm({ onAuthSuccess }) {
 
     try {
       if(isLogin){
-        const url="http://localhost:3000/api/auth/login";
+        const url="https://vercel-backend-new.onrender.com/api/auth/login";
         const response = await axios.post(url, formData, {
         withCredentials: true
       });
@@ -54,7 +54,7 @@ export function AuthForm({ onAuthSuccess }) {
 
       }
       else{
-        const url= "http://localhost:3000/api/auth/register";
+        const url= "https://vercel-backend-new.onrender.com/api/auth/register";
         const response = await axios.post(url, formData, {
         withCredentials: true
       });
