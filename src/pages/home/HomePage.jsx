@@ -10,7 +10,7 @@ export function HomePage({ cart, loadCart }) {
 
   useEffect(() => {
     const getHomeData = async () => {
-      const response = await axios.get('http://localhost:3000/api/products/getproducts');
+      const response = await axios.get('https://vercel-backend-new.onrender.com/api/products/getproducts');
       setProducts(response.data.products);
     };
 
