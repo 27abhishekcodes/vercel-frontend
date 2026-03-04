@@ -14,7 +14,7 @@ function App() {
 
   const loadCart = async () => {
     const token = localStorage.getItem("token");
-    const response = await axios.get('http://localhost:3000/api/cart/',{
+    const response = await axios.get('https://vercel-backend-new.onrender.com/api/cart/',{
       headers: {
       Authorization: `Bearer ${token}`,
     },
