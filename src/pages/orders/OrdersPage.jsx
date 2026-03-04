@@ -11,7 +11,7 @@ export function OrdersPage({ cart }) {
   useEffect(() => {
     const token = localStorage.getItem('token');
 
-    axios.get('/api/orders/fetchorder', {
+    axios.get('https://vercel-backend-new.onrender.com/api/orders/fetchorder', {
       headers: {
         'Content-Type': 'application/json',
         Authorization: `Bearer ${token}`,
